@@ -1,0 +1,24 @@
+{
+	"name": "teleport/pipeline",
+	"type": "library",
+	"description": "Teleport pipeline package.",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mohamed ELbahja",
+			"email": "mohamed@elbahja.me",
+			"homepage": "https://elbahja.me"
+		}
+	],
+	"require": {
+		"php": ">=7.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"Teleport\\Pipeline\\": "src/"
+		}
+	},
+
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

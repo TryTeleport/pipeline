@@ -4,7 +4,7 @@ The teleport pipeline design pattern implementation.
 
 ```php
 
-class AddBazPipeline implements Teleport\Pipeline\Interfaces\StageInterface
+class BazStage implements Teleport\Pipeline\Interfaces\StageInterface
 {
 
 	public function process($payload)
@@ -19,7 +19,7 @@ $pipeline = new Teleport\Pipeline\Pipeline;
 
 $pipeline
 	->pipe(new Teleport\Pipeline\Stages\JsonDecodeStage)
-	->pipe(new AddBazPipeline)
+	->pipe(new BazStage)
 	->pipe(function($payload)
 	{
 		$payload->x = "y";
